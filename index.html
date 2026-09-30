@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Personal Portfolio</title>
+		<!-- Bootstrap Link -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+		<!-- External CSS Link -->
+		<link rel="stylesheet" type="text/css" href="./index.css"/>
+
+		<!-- Google Font Links -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+		<!-- Fontawesome Icon -->
+		<script src="https://kit.fontawesome.com/578707ab7e.js" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+
+		<!-- Navbar START -->
+		<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
+		  <div class="container-fluid px-3 px-md-5">
+		    <a class="navbar-brand" href="#landing"><span id="nav-logo">MB</span> Matthew Antonio Bulaong</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		      <div class="navbar-nav ms-auto">
+		        <a class="nav-link active" aria-current="page" href="#landing">Home</a>
+		        <a class="nav-link" href="#projects">My Projects</a>
+		        <a class="nav-link" href="#tools">Tools</a>
+		        <a class="nav-link" href="#contact">Contact</a>
+
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+		<!-- Navbar END -->
+
+		<!-- Main Section Container START -->
+		<div>
+
+			<!-- Landing Section START -->
+			<section class="container-fluid" id="landing">
+
+				<div class="row py-5 px-5 justify-content-between flex-md-row-reverse align-items-center g-3 position">
+					<!-- img div -->
+					<div class="col-12 col-md-6 col-lg-6 col-xl-4 p-3 bg-white rounded-3 shadow position-relative">
+						<img class="img-fluid rounded-3" src="./images/my_pic.jpg"/>
+
+						<!-- Floating Div -->
+						<div class="position-absolute bottom-0 start-50 translate-middle-x mb-5 w-75 bg-white rounded-3 shadow-sm border d-flex justify-content-between align-items-center px-3 py-2" id="floating-div-img">
+							<span>Malolos, Bulacan &bull; Remote Available</span>
+
+							<!-- Green Icon Badge -->
+							        <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: #d1f4e0; width: 28px; height: 28px;">
+							            <span><i class="fa-solid fa-map-pin"></i></span>
+							        </div>
+						</div>
+						<!-- Floating Div END -->
+
+					</div>
+					<!-- content -->
+					<div class="col-12 col-md-6 col-lg-6">
+						<div class="available p-2 d-inline-flex justify-content-center align-items-center">
+							<span class="bullet-p"></span>
+							<p>AVAILABLE FOR NEW ROLES & PROJECTS</p>
+						</div>
+						<h1 class="mt-3 hero-name">Matthew Antonio B. Bulaong</h1>
+						<h2 class="mt-3">Full Stack Web Developer</h2>
+						<p class="mt-4">Hey! Computer Engineering graduate here hoping to be an IT professional. Check out my latest projects below. </p> 
+						<p>I try to do my best to create things with love. &#x2764;&#xfe0f; </p>
+
+						<div class="d-flex align-items-center gap-2 mb-3">
+
+							<div class="d-flex flex-column gap-1 align-items-center card-landing p-2 p-lg-3">
+								<span><i class="fa-solid fa-code"></i></span>
+								<p>Frontend</p>
+							</div>
+
+							<div class="d-flex flex-column gap-1 align-items-center card-landing p-2 p-lg-3">
+								<span>{ }</span>
+								<p>Backend</p>
+							</div>
+
+							<div class="d-flex flex-column gap-1 align-items-center card-landing p-2 p-lg-3">
+								<span><i class="fa-solid fa-database"></i></span>
+								<p>Database</p>
+							</div>
+						</div>
+
+						<a href="#projects" id="btn-landing" class="text-decoration-none d-inline-flex justify-content-center align-items-center py-auto">VIEW PROJECTS ↓</a>
+					</div>
+				</div>
+
+
+			</section>
+			<!-- Landing section END -->
+
+			<!-- Projects Section START -->
+			<section class="container-fluid mt-5 py-4 px-5" id="projects"> 
+			    
+			    <!-- Heading Row -->
+			    <div class="row mb-4">
+			        <div class="col-12">
+			            <h1 class="d-inline-block p-2 fs-4">Projects</h1>
+			            <p>I like building stuff, here you can check the things I made :)</p>
+			        </div>
+			    </div>
+
+			    <!-- Projects Row -->
+			    <div class="row justify-content-center">
+			        <!-- card column -->
+			        <div class="col-12 col-md-6 col-lg-4 mb-4"> 
+			            
+			            <div class="card h-100"> 
+			              <img src="./images/ecommerce-api.jpg" class="card-img-top" alt="...">
+			              <div class="card-body">
+			                <h5 class="card-title">E-commerce API Documentation</h5>
+			                <p class="card-text border-bottom pb-3">Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.</p>
+			                <a href="#e-commerce-api" class="text-decoration-none borte">View Project ➔</a>
+			              </div>
+			            </div>
+			        </div>
+			        <!-- card column end -->
+
+			        <!-- card column -->
+			        <div class="col-12 col-md-6 col-lg-4 mb-4">
+			            <div class="card h-100">
+			              <img src="./images/booking-api.jpg" class="card-img-top" alt="...">
+			              <div class="card-body">
+			                <h5 class="card-title">Course Booking API Documentation</h5>
+			                <p class="card-text border-bottom pb-3">RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.</p>
+			                <a href="#course-booking-api" class="text-decoration-none">View Project ➔</a>
+			              </div>
+			            </div>
+			        </div>
+			        <!-- card column end -->
+
+			        <!-- card column -->
+			        <div class="col-12 col-md-6 col-lg-4 mb-4">
+			            <div class="card h-100">
+			              <img src="./images/booking-app.avif" class="card-img-top" alt="...">
+			              <div class="card-body">
+			                <h5 class="card-title">Course Booking App</h5>
+			                <p class="card-text border-bottom pb-3">A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.</p>
+			                <a href="#course-booking-app" class="text-decoration-none">View Project ➔</a>
+			              </div>
+			            </div>
+			        </div>
+			        <!-- card column end -->
+
+			        <!-- card column -->
+			        <div class="col-12 col-md-6 col-lg-4 mb-4">
+			            <div class="card h-100">
+			              <img src="./images/ecommerce-app.jpg" class="card-img-top" alt="...">
+			              <div class="card-body">
+			                <h5 class="card-title">E-commerce App</h5>
+			                <p class="card-text border-bottom pb-3">MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities..</p>
+			                <a href="#e-commerce-app" class="text-decoration-none">View Project ➔</a>
+			              </div>
+			            </div>
+			        </div>
+			        <!-- card column end -->
+
+			        <!-- card column -->
+			        <div class="col-12 col-md-6 col-lg-4 mb-4">
+			            <div class="card h-100">
+			              <img src="./images/airline-system.avif" class="card-img-top" alt="...">
+			              <div class="card-body">
+			                <h5 class="card-title">Airline Booking System Mockup</h5>
+			                <p class="card-text border-bottom pb-3">Side Project: Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.</p>
+			                <a href="#airline-booking-mockup" class="text-decoration-none">View Project ➔</a>
+			              </div>
+			            </div>
+			        </div>
+			        <!-- card column end -->
+
+			        <!-- card column -->
+			        <div class="col-12 col-md-6 col-lg-4 mb-4">
+			            <div class="card h-100">
+			              <img src="./images/airline-system-prototype.png" class="card-img-top" alt="...">
+			              <div class="card-body">
+			                <h5 class="card-title">Airline Booking System Prototype</h5>
+			                <p class="card-text border-bottom pb-3">Side Project: Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.</p>
+			                <a href="#airline-booking-system" class="text-decoration-none">View Project ➔</a>
+			              </div>
+			            </div>
+			        </div>
+			        <!-- card column end -->
+
+			        <!-- card column -->
+			        <div class="col-12 col-md-6 col-lg-4 mb-4">
+			            <div class="card h-100">
+			              <img src="./images/shortcourses.avif" class="card-img-top" alt="...">
+			              <div class="card-body">
+			                <h5 class="card-title">Short Courses Capstone</h5>
+			                <p class="card-text border-bottom pb-3">Various applications made using Java, PHP, etc.   </p>
+			                <a href="#short-courses" class="text-decoration-none">View Project ➔</a>
+			              </div>
+			            </div>
+			        </div>
+			        <!-- card column end -->
+
+			        <!-- card column -->
+			        <div class="col-12 col-md-6 col-lg-4 mb-4">
+			            <div class="card h-100">
+			              <img src="./images/shortcourses.avif" class="card-img-top" alt="...">
+			              <div class="card-body">
+			                <h5 class="card-title">Short Courses Capstone</h5>
+			                <p class="card-text border-bottom pb-3">Various applications made using Java, PHP, etc.   </p>
+			                <a href="#short-courses" class="text-decoration-none">View Project ➔</a>
+			              </div>
+			            </div>
+			        </div>
+			        <!-- card column end -->
+
+
+			        <!-- card column -->
+			        <div class="col-12 col-md-6 col-lg-4 mb-4">
+			            <div class="card h-100">
+			              <img src="./images/shortcourses.avif" class="card-img-top" alt="...">
+			              <div class="card-body">
+			                <h5 class="card-title">Short Courses Capstone</h5>
+			                <p class="card-text border-bottom pb-3">Various applications made using Java, PHP, etc.   </p>
+			                <a href="#short-courses" class="text-decoration-none">View Project ➔</a>
+			              </div>
+			            </div>
+			        </div>
+			        <!-- card column end -->
+
+
+
+
+			    </div>
+			    <!-- Project Row END -->
+			</section>
+			<!-- Projects Section END -->
+
+			<!-- Tools Section START -->
+			<section class="container-fluid py-5 px-5" id="tools">
+
+				<!-- Heading Row -->
+				<div class="row mb-4">
+				    <div class="col-12 text-center gap-1">
+				        <h1 class="d-inline-block p-2 fs-4">Tools & Technologies</h1>
+				        <h2 class="display-5">Developer Toolkit</h2>
+				        <p>The core technologies, frameworks, and developer tools that I use for powering modern web applications.</p>
+				    </div>
+				</div>
+
+				<!-- Tools Grid Row START -->
+				<div class="row justify-content-center g-4 text-center">
+
+					<!-- card column start -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<div class="card-tool">
+							<div class="container-tool">
+								<span><i class="fa-brands fa-visual-studio"></i></span>
+							</div>
+							<h4>VS Code</h4>
+							<p>Editor & IDE</p>
+						</div>
+					</div>
+					<!-- card column end -->
+
+					<!-- card column start -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<div class="card-tool">
+							<div class="container-tool">
+								<span>
+									<i class="fa-brands fa-react"></i>
+								</span>
+							</div>
+							<h4>React</h4>
+							<p>UI Library</p>
+						</div>
+					</div>
+					<!-- card column end -->
+
+					<!-- card column start -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<div class="card-tool">
+							<div class="container-tool">
+								<span>
+									<i class="fa-brands fa-square-js"></i>
+								</span>
+							</div>
+							<h4>JavaScript</h4>
+							<p>Web Core</p>
+						</div>
+					</div>
+					<!-- card column end -->
+
+					<!-- card column start -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<div class="card-tool">
+							<div class="container-tool">
+								<span>
+									<i class="fa-brands fa-tailwind-css"></i>
+								</span>
+							</div>
+							<h4>Tailwind CSS</h4>
+							<p>Utility Styling</p>
+						</div>
+					</div>
+					<!-- card column end -->
+
+					<!-- card column start -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<div class="card-tool">
+							<div class="container-tool">
+								<span>
+									<i class="fa-brands fa-git-alt"></i>
+								</span>
+							</div>
+							<h4>Git</h4>
+							<p>Version Control</p>
+						</div>
+					</div>
+					<!-- card column end -->
+
+					<!-- card column start -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<div class="card-tool">
+							<div class="container-tool">
+								<span>
+									<i class="fa-brands fa-docker"></i>
+								</span>
+							</div>
+							<h4>Docker</h4>
+							<p>Containers</p>
+						</div>
+					</div>
+					<!-- card column end -->
+
+					<!-- card column start -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<div class="card-tool">
+							<div class="container-tool">
+								<span>
+									<i class="fa-brands fa-square-figma"></i>
+								</span>
+							</div>
+							<h4>Figma</h4>
+							<p>UI Designing</p>
+						</div>
+					</div>
+					<!-- card column end -->
+
+					<!-- card column start -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<div class="card-tool">
+							<div class="container-tool">
+								<span>
+									<i class="fa-brands fa-bootstrap"></i>
+								</span>
+							</div>
+							<h4>Bootstrap 5</h4>
+							<p>Component UI</p>
+						</div>
+					</div>
+					<!-- card column end -->
+
+					<!-- card column start -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<div class="card-tool">
+							<div class="container-tool">
+								<span>
+									<i class="fa-brands fa-mdb"></i>
+								</span>
+							</div>
+							<h4>MongoDB</h4>
+							<p>No Relational Database</p>
+						</div>
+					</div>
+					<!-- card column end -->
+
+					<!-- card column start -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<div class="card-tool">
+							<div class="container-tool">
+								<span>
+									<i class="fa-solid fa-database"></i>
+								</span>
+							</div>
+							<h4>MySQL</h4>
+							<p>Relational Database</p>
+						</div>
+					</div>
+					<!-- card column end -->
+
+					<!-- card column start -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<div class="card-tool">
+							<div class="container-tool">
+								<span>
+									<i class="fa-brands fa-node"></i>
+								</span>
+							</div>
+							<h4>Node.js</h4>
+							<p>JavaScript Runtime</p>
+						</div>
+					</div>
+					<!-- card column end -->
+
+					<!-- card column start -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<div class="card-tool">
+							<div class="container-tool">
+								<span>
+									<i class="fa-brands fa-vuejs"></i>
+								</span>
+							</div>
+							<h4>Vue.js</h4>
+							<p>JavaScript Framework</p>
+						</div>
+					</div>
+					<!-- card column end -->
+
+
+				</div>
+				<!-- Tools Grid END -->
+
+			</section>
+			<!-- Tools Section END -->
+
+			<!-- Contact Section START -->
+			<section class="container-fluid py-5 px-3" id="contact">
+
+				<!-- Heading Row -->
+				<div class="row mb-4 justify-content-center">
+				    <div class="col-12 col-md-8 col-lg-6 text-center gap-1">
+				        <h1 class="d-inline-block p-2 fs-4">Contact</h1>
+				        <p>Got a project in mind or just want to chat about web development? Send me a message below and I'll get back to you as soon as I can.</p>
+
+				        <!-- Contact Form  -->
+				        <div class="text-start">
+
+				        	<form method="POST" class="p-3">
+				        		<div class="mb-3">
+				        		  <label for="exampleFormControlInput1" class="form-label">YOUR NAME</label>
+				        		  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g. Matt Bulaong">
+				        		</div>
+				        		<div class="mb-3">
+				        		  <label for="exampleFormControlInput2" class="form-label">EMAIL ADDRESS</label>
+				        		  <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="matt@example.com">
+				        		</div>
+				        		<div class="mb-3">
+				        		  <label for="exampleFormControlTextarea1" class="form-label">PROJECT DETAILS / MESSAGE</label>
+				        		  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Tell me about your timeline, scope, and objectives..."></textarea>
+				        		</div>
+
+				        		<div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+				        			<a href="#emailtoMatt" id="contact-btn" class="text-center btn p-2" type="submit">CONTACT ME</a>
+				        			<p class="mt-2">Direct email: <span>matthew.bulaong@design.io</span></p>
+				        		</div>
+				        		
+
+				        	</form>
+
+				        </div>
+				        <!-- Contact Form END -->
+
+				    </div>
+				</div>
+				
+			</section>
+			<!-- Contact Section END -->
+			
+		</div>
+		<!-- Main Section Container END -->
+
+		<!-- footer section START -->
+		<footer id="footer" class="d-flex flex-column flex-md-row p-3 px-5 text-center justify-content-between align-items-center ">
+			<div class="d-flex align-items-center gap-2">
+				<div class="d-none d-md-block overlay-footer"></div>
+				<p class="m-0">&copy; 2026 Matthew Antonio Bulaong. All Rights Reserved.</p>
+			</div>
+			<div class="d-flex justify-content-center align-items-center gap-2">
+				<div class="fs-4">
+					<span><a href="https://github.com/Hinicus" target="_blank" class="text-decoration-none"><i class="fa-brands fa-github"></i></a></span>
+					<span><a href="https://www.linkedin.com/in/matthew-antonio-bulaong-1a1412391/" target="_blank" class="text-decoration-none"><i class="fa-brands fa-linkedin"></i></a></span>
+					<span><a href="https://www.facebook.com/matthewantonio.bulaong/" target="_blank" class="text-decoration-none"><i class="fa-brands fa-facebook"></i></a></span>
+				</div>
+				<a href="#landing" class="text-decoration-none">BACK TO TOP ↑</a>
+			</div>
+
+
+
+		</footer>
+
+		<!-- footer section END -->
+
+
+
+
+		<!-- Bootstrap Script -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	</body>
+</html>
