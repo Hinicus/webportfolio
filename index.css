@@ -134,6 +134,12 @@ section {
 
 }
 
+#floating-div-img div {
+	background-color: #d1f4e0; 
+	width: 28px; 
+	height: 28px;
+}
+
 #floating-div-img span {
 	color: #64748B;
 	font-family: "Plus Jakarta Sans";
